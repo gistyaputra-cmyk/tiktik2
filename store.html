@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-tech">
+
+<div class="navbar">
+
+<div class="nav-left">
+<img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=100" class="logo">
+<span class="brand">CUANVERSE</span>
+</div>
+
+<div class="nav-center">
+<span onclick="showSection('about')">Tentang Kami</span>
+<span onclick="showSection('market')">Marketplace</span>
+<span onclick="goJual()">Jual Produk</span>
+</div>
+
+<button class="logout" onclick="logout()">Logout</button>
+
+</div>
+
+<div id="about" class="section">
+<h2>Tentang Kami</h2>
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" class="img-about">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=500" class="img-about">
+
+<p>Kami adalah platform digital modern untuk jual beli produk digital.</p>
+<p>Tujuan kami mempermudah transaksi digital secara cepat dan aman.</p>
+<p>Target kami pelajar, freelancer, dan pebisnis digital.</p>
+</div>
+
+<div id="market" class="section" style="display:none;">
+<h2>Marketplace</h2>
+<div class="products" id="productList"></div>
+</div>
+
+<div id="popup" class="popup">
+<div class="popup-content">
+<img id="productImage" style="width:100%;border-radius:10px;margin-bottom:10px;">
+<h3 id="productName"></h3>
+<p id="price"></p>
+
+<button onclick="beli()">Beli</button>
+<button onclick="closePopup()">Cancel</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
